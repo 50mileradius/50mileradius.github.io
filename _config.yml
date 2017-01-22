@@ -1,6 +1,7 @@
 name: The 50 Mile Radius Adventures Blog
 tagline: Get OUTside and PLAY!
 title: 50 Mile Radius Adventures
+url: https://50mileradi.us
 exclude: [Gemfile, Gemfile.lock, README.md]
 sass:
   style: compressed
@@ -8,3 +9,9 @@ sass:
 # Pagination
 paginate: 3
 paginate_path: "/posts/:num"
+
+# Load extra gems
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
