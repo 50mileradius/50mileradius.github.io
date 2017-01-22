@@ -1,0 +1,6 @@
+name: The 50 Mile Radius Adventures Blog
+tagline: Get OUTside and PLAY!
+title: 50 Mile Radius Adventures
+exclude: [Gemfile, Gemfile.lock, README.md]
+sass:
+  style: compressed
