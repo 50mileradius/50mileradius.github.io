@@ -9,11 +9,35 @@
   </head>
 
   <body>
-    <div id="wrapper-content" class="wrapper">
+    <div id="wrapper-jumbotron" class="jumbotron wrapper">
       <div class="container">
-        {{ content }}
+        <h1 class="display-3"><a href="/">{{ site.title }}</a></h1>
+        <p class="lead">{{ site.tagline }}</p>
       </div>
     </div>
+
+    <div id="wrapper-content" class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div id="content" class="col">
+            {{ content }}
+          </div>
+          <div id="sidebar" class="col-lg-3">
+            {% include sidebar.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="wrapper-footer" class="wrapper footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="//code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

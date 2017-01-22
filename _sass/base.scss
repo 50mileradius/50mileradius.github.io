@@ -1,0 +1,19 @@
+
+#wrapper-jumbotron {
+  background-color: $green;
+
+  h1 a {
+    color: $black;
+
+    &:active,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#content {
+  h2 a {
+    color: $orange;
+  }
+}

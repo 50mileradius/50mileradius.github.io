@@ -4,3 +4,7 @@ title: 50 Mile Radius Adventures
 exclude: [Gemfile, Gemfile.lock, README.md]
 sass:
   style: compressed
+
+# Pagination
+paginate: 3
+paginate_path: "/posts/:num"
